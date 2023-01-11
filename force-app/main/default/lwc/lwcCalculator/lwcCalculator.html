@@ -1,3 +1,12 @@
 <template>
-
+    <lightning-card  variant="Narrow"  title="Hello" icon-name="standard:account">
+       <lightning-input type="integer" variant="standard" name="input1" label="input1" onchange={handlechange}></lightning-input>
+       <lightning-input type="integer" variant="standard" name="input2" label="input2" onchange={handlechange} ></lightning-input>
+       <lightning-button variant="brand" label="Add"  name="add"  onclick={handleClick}></lightning-button>
+       <lightning-button variant="brand" label="Subtract" name="subtract"  onclick={handleClick}></lightning-button>
+       <lightning-button variant="brand" label="Multiplication" name ="multiplication" onclick={handleClick}></lightning-button>
+       <lightning-button variant="brand" label="Divsion" name="division"  onclick={handleClick}></lightning-button>
+       
+</lightning-card>
+result ={result}
 </template>
