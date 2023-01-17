@@ -1,0 +1,19 @@
+<template>
+    <lightning-card  variant="Narrow"  title="foreachloop" icon-name="standard:account">
+    <ul>
+      <template for:each={contacts} for:item="con">
+        <li key={con.Id}>
+          {con.Name}, {con.Title}
+        </li>
+      </template>
+    </ul>
+    </lightning-card>
+    <template iterator:it={contacts}>
+        <li key={it.value.Id}>
+
+          {it.value.Name}, {it.value.Title}
+          
+        </li>
+      </template>
+
+</template>
